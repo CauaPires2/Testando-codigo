@@ -1,0 +1,30 @@
+def mostrar_receita():
+    print("--- MENU DE DOCES ---")
+    print("1. Bolo de Caneca")
+    print("2. Pudim de Leite Condensado")
+    print("3. Mousse de Chocolate")
+    
+    escolha = input("\nDigite o nome do doce que deseja a receita: ").strip().lower()
+
+    if escolha == "bolo":
+        print("\n[RECEITA: BOLO DE CANECA]")
+        print("- Misture 4 colheres de farinha, 4 de açúcar, 2 de chocolate e 1 ovo.")
+        print("- Adicione 3 colheres de leite e 3 de óleo.")
+        print("- Leve ao micro-ondas por 3 minutos.")
+
+    elif escolha == "pudim":
+        print("\n[RECEITA: PUDIM]")
+        print("- Bata 1 lata de leite condensado, 1 de leite e 3 ovos no liquidificador.")
+        print("- Despeje em forma caramelizada.")
+        print("- Cozinhe em banho-maria por 45 minutos.")
+
+    elif escolha == "mousse":
+        print("\n[RECEITA: MOUSSE DE CHOCOLATE]")
+        print("- Derreta 200g de chocolate e misture com 1 lata de creme de leite.")
+        print("- Bata 3 claras em neve e incorpore delicadamente.")
+        print("- Gelar por 4 horas.")
+
+    else:
+        print("\nOps! Esse doce não está no nosso caderninho de receitas.")
+
+mostrar_receita()
